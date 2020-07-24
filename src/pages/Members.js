@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Member =()=>{
+const Members =()=>{
   return(
-    <div>Memberだよ</div>
+    <div>Membersだよ</div>
   )
 }
 
-export default Member
+export default Members

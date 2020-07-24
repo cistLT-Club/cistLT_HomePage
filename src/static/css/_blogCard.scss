@@ -1,0 +1,28 @@
+.blogCard{
+  width:300px;
+  background-color:white;
+  border:1px solid rgb(228, 228, 228);
+  border-radius:3px;
+  img{
+    width:95%;
+    margin:0 auto;
+    display:block;
+    height:150px;
+    object-fit:cover;
+  }
+  h3{
+    font-size:16px;
+    font-weight:bold;
+  }
+  .publishDate{
+    font-size:12px;
+    text-align:right;
+  }
+  .body{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size:12px;
+  }
+}
