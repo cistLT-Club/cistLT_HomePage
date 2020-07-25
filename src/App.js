@@ -10,6 +10,8 @@ import Footer from './components/Footer'
 import Members from './pages/Members';
 import * as contentful from "contentful";
 import ApiKey from "./constants/contentful";
+import Blogs from './pages/Blogs';
+import Article from './pages/Article'
 
 const App =()=>{
   const client = contentful.createClient(ApiKey)
@@ -38,6 +40,14 @@ const App =()=>{
         <Route exact
           path="/members"
           render={() => <Members />}></Route>
+        <Route exact
+          path="/blogs"
+          render={() => <Blogs data={blog}/>}></Route>
+        <Route
+          exact
+          path="/blogs/:id"
+          render={() => <Article data={blog}/>}
+          />
       </Switch>
       <Footer/>
     </BrowserRouter>

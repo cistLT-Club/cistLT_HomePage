@@ -2,7 +2,9 @@ import React from 'react'
 
 const Members =()=>{
   return(
-    <div>Membersだよ</div>
+    <>
+    <h1>MEMBERS</h1>
+    </>
   )
 }
 

@@ -1,13 +1,31 @@
 .blogCard{
-  width:300px;
-  background-color:white;
-  border:1px solid rgb(228, 228, 228);
+  max-width: 340px;
+  height: auto;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color:rgba(0,0,255,0.1);
+  border:2px solid rgb(53, 38, 38);
   border-radius:3px;
+  color:black !important;
+  text-decoration: none;
+  p{
+    color:white !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight:bold;
+  }  
+  
   img{
-    width:95%;
+    max-width: 100%;
     margin:0 auto;
     display:block;
-    height:150px;
+    height:200px;
     object-fit:cover;
   }
   h3{
@@ -19,10 +37,13 @@
     text-align:right;
   }
   .body{
+    max-width: 100%;
+    height: 300px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
     font-size:12px;
+    margin: 0 8px;
   }
 }
