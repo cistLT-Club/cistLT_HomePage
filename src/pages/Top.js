@@ -1,12 +1,13 @@
 import React from 'react'
 import BlogCard from '../components/BlogCard';
 import logo from '../static/images/logo.svg'
-import yamada from '../static/images/yamada.png'
-import saito from '../static/images/saito.png';
 import twitter from '../static/images/twitter.png'
 import mail from '../static/images/mail.png'
 import github from '../static/images/github.png'
-
+import MembersCard from '../components/MembersCard'
+import { Link } from 'react-router-dom';
+import energy from '../static/images/energy.svg'
+import Navbar from '../components/Navbar'
 
 const Top =(props)=>{
   let bloglist = ''
@@ -27,45 +28,48 @@ const Top =(props)=>{
     bloglist = <p>loading...</p>
   }
   return(
-    <> 
-    <div className='topContainer'>
+  <>
+    <div id="top" className='topContainer container'>
+    <Navbar/>
+
       <img src={logo} alt=''/>
-      <div className='about'>
+      <div id="about" className='about'>
         <h2><span>A</span>BO<span>U</span>T</h2>
         <p>
-          IT技術系の勉強をしています！初心者大歓迎です！所属メンバーはバイオ系や電子工学系、情報工学系と様々めんばーで構成されています！！みんなで興味のあることを勉強してアウトプットしていくおｋとを目標としています！一人で悩まないで！一緒に技術力を高めませんか？？
+          IT技術系の勉強をしています！初心者大歓迎です！所属メンバーはバイオ系、電子工学系、情報工学系と様々なメンバーで構成されています！！みんなで興味のあることを勉強し、アウトプットすることを目標にしています！一人で悩まないで！一緒に技術力を高めませんか？？
         </p>
       </div>
-      <div className='members'>
-        <h2>MEM<span>B</span>ER<span>S</span></h2>
-        <div>
-          <p>Yoshiki-Yamada</p>
-          <img src={yamada} />
-        </div>
-
-        <div>
-          <p>Saito</p>
-          <img src={saito} />
-        </div>
-        
+      <div id="members">
+      <h2>ME<span>MB</span>E<span>R</span>S</h2>
+      <div  className='members'>
+      {props.data2.length ? props.data2.map((item,i)=>(<MembersCard data={item}/>)):
+      (<p>Now Loading...</p>)}
       </div>
-      <div className='newBlog'>
+      </div>
+
+      <div id="blogs" className='newBlog'>
         <h2>B<span>L</span>O<span>G</span>S</h2>
         <div className='blogContainer'>
         {bloglist}
-        {bloglist2}</div>
-        
-      </div>
-      <div className='contact'>
-        <h2>CO<span>N</span>TA<span>C</span>T</h2>
-        <a href='https://twitter.com/CistLt'><img src={twitter} /></a>
-        <a href='https://twitter.com/CistLt'><img src={mail} /></a>
-        <a href='https://twitter.com/CistLt'><img src={github} /></a>
-      </div>
-    </div>
-    </>
-  )
+        {bloglist2}
+        </div>
+        <Link to='/blogs' className='moreButton'>
+          <p><img src={energy} />MORE...</p> 
+        </Link>
+      </div> 
 
+      <div id="contact" className='contact'>
+        <h2>CO<span>N</span>TA<span>C</span>T</h2>
+      </div>
+
+        <div className='iconFlex'>
+          <a href='https://twitter.com/CistLt'><img src={twitter} alt=''/></a>
+          <a href="mailto:cist-lt@googlegroups.com"><img src={mail} alt=''/></a>
+          <a href='https://twitter.com/CistLt'><img src={github} alt=''/></a>
+        </div>
+
+    </div>
+  </>
+  )  
 }
-        
-export default Top        
+export default Top

@@ -9,6 +9,7 @@
     "contentful": "^7.14.6",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.2.0",

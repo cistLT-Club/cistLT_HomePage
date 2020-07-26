@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 const BlogCard =(props)=>{
   return(
     <>
-    <Link to={props.url}>
-      <div className='blogCard'>
+    <Link to={props.url} className='blogCard'>
+      
         <img src={props.data.fields.image.fields.file.url}/>
-        <p>{props.data.fields.title}</p>
+        <h3>{props.data.fields.title}</h3>
         <p>{props.data.fields.publishDate}</p>
-      </div>
+     
     </Link>
     </>
   )

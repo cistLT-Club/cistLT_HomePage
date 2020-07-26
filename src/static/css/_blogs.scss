@@ -1,0 +1,17 @@
+#blogGrid{
+      display:grid;
+      flex-wrap: wrap;
+    .blogCard{
+      width: 22%;
+      margin: 10px auto;
+      img{
+        display:block;
+        width:100%;
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin:0 auto;
+        border-radius:5px;
+      }
+    }
+  }
