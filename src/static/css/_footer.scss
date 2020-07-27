@@ -1,5 +1,22 @@
 .footer{
-    background-color: rgba($color: #bebc10, $alpha: 0.5);
-
-
+  background-color: rgba($color: #bebc10, $alpha: 0.4);
+  small{
+    display:block;
+    text-align:center;
+    background-color:rgba(0,0,0,0.7);
+    color:white;
+  }
+  a{
+    width:200px;
+    margin:30px auto; 
+  }
+  img{
+      display:block;
+      width:200px;
+      margin:0px auto;
+      padding:30px 0;
+  }
+  p{
+      text-align:center;
+  }
 }

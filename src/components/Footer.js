@@ -1,22 +1,23 @@
 import React from 'react'
+import logo from '../static/images/logo.svg'
+import {Link} from 'react-router-dom'
 
 const Footer =()=>{
   return(
     <>
     <div className='footer'>
+    <Link to=''><img src={logo} alt=''/></Link>
+      <p>
+        製作:Yoshiki-Yamada
+         / دوجا
+          /tanaka🤍
+          /0yu
+          /Takahashi
+          /osamu
+      </p>
+      
 
-      <div>
-        製作者
-        <ul>
-          <li>Yoshiki-Yamada</li>
-          <li>دوجا</li>
-          <li>tanaka🤍</li>
-          <li>0yu</li>
-          <li>Takahashi</li>
-        </ul>
-      </div>
-
-      <div>©️2020 CIST-LTサークル</div>
+      <small>©️2020 CIST-LTサークル</small>
     </div>
 
     </>

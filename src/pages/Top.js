@@ -49,6 +49,7 @@ const Top =(props)=>{
 
       <div id="blogs" className='newBlog'>
         <h2>B<span>L</span>O<span>G</span>S</h2>
+        <p className='desc'>サークルのメンバーがブログを更新しています。</p>
         <div className='blogContainer'>
         {bloglist}
         {bloglist2}

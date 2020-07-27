@@ -103,10 +103,14 @@
 }
 
 .newBlog{
-  
   margin:0 auto;
   width:95%;
-
+  .desc{
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    margin:20px 0;
+  }
   .blogContainer{
     
     display:flex;
@@ -174,4 +178,7 @@
     color: inherit;
     text-shadow: inherit;
   }
+}
+@media (max-width: 768px) {
+  
 }

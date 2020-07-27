@@ -3,7 +3,7 @@
   width:95%;
   margin:0 auto;
   max-width:500px;
-  padding:100px 10px;
+  padding:50px 10px;
   img{
     display: block;
     margin: 0 auto;
@@ -20,5 +20,36 @@
   .body{
     font-size: 14px;
     font-weight: 400;
+  }
+}
+.toBlogs{
+  text-decoration:none;
+  button{
+    display:flex;
+    align-items:center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    font-weight:bold;
+    background-color:white;
+    border-radius:50px;
+    height:50px;
+    width:200px;
+    line-height:50px;
+    justify-content:center;
+    margin:10px;
+    img{
+      display:block;
+      height:20px;
+      width:20px;
+      margin:0;
+      padding:5px;
+    }
+    &:hover{
+      opacity:0.7;
+    } 
   }
 }

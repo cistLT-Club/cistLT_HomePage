@@ -36,7 +36,7 @@ const Navbar =()=>{
       element.classList.remove('active')
     }
   }
-  if( scroll >= 288 && scroll < 659){
+  if( scroll >= 289 && scroll < 659){
     element = document.getElementById('aboutSection')
     if(element){
       element.classList.add('active')
@@ -58,7 +58,7 @@ const Navbar =()=>{
       element.classList.remove('active')
     }
   }
-  if( scroll >= 1260 && scroll < 1280){
+  if( scroll >= 1261 && scroll < 1370){
     element = document.getElementById('blogsSection')
     if(element){
       element.classList.add('active')
@@ -69,7 +69,7 @@ const Navbar =()=>{
       element.classList.remove('active')
     }
   }
-  if( scroll >= 1280 && scroll < 1290){
+  if( scroll >= 1370 && scroll < 1700){
     element = document.getElementById('contactSection')
     if(element){
       element.classList.add('active')
@@ -85,7 +85,7 @@ const Navbar =()=>{
   return(
     <>
     <ul className="navbar">
-    {/* <li>{scroll}</li> */}
+    {/* <li style={{color:'white'}}>{scroll}</li> */}
       <li id='topSection'>
         <AnchorLink href="#top">
           <span>TOP</span>
