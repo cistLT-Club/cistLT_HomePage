@@ -6,6 +6,7 @@
   padding:10px;
   text-decoration:none;
   color:black;
+  margin :10px auto;
   img{
     width:100%;
     height:170px;
@@ -17,6 +18,12 @@
   }
   p{
     font-size:12px;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .blogCard{
+    width:90%;
   }
 }
 

@@ -66,7 +66,7 @@ const Top =(props)=>{
         <div className='iconFlex'>
           <a href='https://twitter.com/CistLt'><img src={twitter} alt=''/></a>
           <a href="mailto:cist-lt@googlegroups.com"><img src={mail} alt=''/></a>
-          <a href='https://twitter.com/CistLt'><img src={github} alt=''/></a>
+          <a href='https://github.com/Yoshiki-Yamada/'><img src={github} alt=''/></a>
         </div>
 
     </div>

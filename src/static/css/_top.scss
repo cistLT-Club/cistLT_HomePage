@@ -179,6 +179,15 @@
     text-shadow: inherit;
   }
 }
-@media (max-width: 768px) {
+@media screen and(max-width: 768px) {
+  .members{
+    .membersCard{ 
+      width: 48% !important;
+    }
+  }
 
+  .blogContainer{
+    flex-direction: column;
+    
+  }
 }

@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build_deploy_master:
     docker:
@@ -22,7 +22,7 @@ jobs:
           command: npm run build
       - run:
           name: deploy to Firebase Hosting and Functions
-          command: ./node_modules/.bin/firebase deploy --token "version: 2
+          command: ./node_modules/.bin/firebase deploy --token "version: 2.1
 jobs:
   build_deploy_master:
     docker:
@@ -46,7 +46,7 @@ jobs:
           command: npm run build
       - run:
           name: deploy to Firebase Hosting and Functions
-          command: ./node_modules/.bin/firebase deploy --token "version: 2
+          command: ./node_modules/.bin/firebase deploy --token "version: 2.1
 jobs:
   build_deploy_master:
     docker:
@@ -73,7 +73,7 @@ jobs:
           command: ./node_modules/.bin/firebase deploy --token "1//0eI6UNf73xnx4CgYIARAAGA4SNwF-L9IrRUS2Is89yGL89HH7kYajCXwqSLBTAbC4RfuV1dC874c4YM9JV2tVV6F21E69g-SyYPM"
 
 workflows:
-  version: 2
+  version: 2.1
   build_deploy_master:
     jobs:
       - build_deploy_master:
@@ -82,7 +82,7 @@ workflows:
               only: master"
 
 workflows:
-  version: 2
+  version: 2.1
   build_deploy_master:
     jobs:
       - build_deploy_master:
@@ -91,7 +91,7 @@ workflows:
               only: master"
 
 workflows:
-  version: 2
+  version: 2.1
   build_deploy_master:
     jobs:
       - build_deploy_master:

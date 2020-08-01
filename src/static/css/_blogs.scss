@@ -38,3 +38,29 @@
     }
   }
 }
+@media screen and(max-width: 768px) {
+  .blogsGrid{
+    display:grid;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 1fr !important;
+    grid-gap: 10px;
+    width:95%;
+    max-width:1000px;
+    margin:0 auto;
+    .blogCard{
+      width: 90%;
+      margin: 0 auto;
+      img{
+        display: block;
+        width:100%;
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin:0 auto;
+        border-radius:5px; 
+    }
+  }
+}
+}
