@@ -16,6 +16,14 @@ const App =()=>{
   const [blog, setBlog] = useState([])
   const [members, setMembers] = useState([])
   
+  //Google Analytics
+  ReactGA.initialize('UA-173647357-1');
+  const history = createBrowserHistory();
+  history.listen(({ pathname }) => {
+  ReactGA.set({ page: pathname });
+  ReactGA.pageview(pathname);
+  });
+
   useEffect(() => {
     client
       .getEntries({
@@ -32,7 +40,7 @@ const App =()=>{
   },[])
 
   return(
-    <BrowserRouter> 
+    <BrowserRouter history={history}> 
       <Switch>
         <Route exact
           path="/"
