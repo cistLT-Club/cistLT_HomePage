@@ -8,11 +8,14 @@ import * as contentful from "contentful";
 import ApiKey from "./constants/contentful";
 import Blogs from './pages/Blogs';
 import Article from './pages/Article'
+import ReactGA from 'react-ga';
+
 
 const App =()=>{
   const client = contentful.createClient(ApiKey)
   const [blog, setBlog] = useState([])
   const [members, setMembers] = useState([])
+  
   useEffect(() => {
     client
       .getEntries({
@@ -27,6 +30,7 @@ const App =()=>{
       })
       .then((res) => setMembers(res.items))
   },[])
+
   return(
     <BrowserRouter> 
       <Switch>
