@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import arrow from '../static/images/arrow.svg'
+import { ScrollTopOnMount } from '../components/ScrollToTopOnMount';
 
 const Article =(props)=>{
   let { id } = useParams()
@@ -21,6 +22,7 @@ const Article =(props)=>{
   ):(<p>Nowloading...</p>)
   return(
     <>
+    <ScrollTopOnMount/>
     <div className='container'>
     <div className='article'> 
     <Link to='/blogs' className='toBlogs'><button type="button"><img src={arrow} alt=''/>記事一覧へ</button></Link>

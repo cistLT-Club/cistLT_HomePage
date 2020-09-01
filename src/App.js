@@ -9,6 +9,7 @@ import ApiKey from "./constants/contentful";
 import Blogs from './pages/Blogs';
 import Article from './pages/Article'
 import ReactGA from 'react-ga';
+import {createBrowserHistory} from 'history';
 
 
 const App =()=>{
