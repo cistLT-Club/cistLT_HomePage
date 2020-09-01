@@ -54,6 +54,7 @@ const Top =(props)=>{
         {bloglist}
         {bloglist2}
         </div>
+
         <Link to='/blogs' className='moreButton'>
           <p><img src={energy} />MORE...</p> 
         </Link>
@@ -64,9 +65,9 @@ const Top =(props)=>{
       </div>
 
         <div className='iconFlex'>
-          <a href='https://twitter.com/CistLt'><img src={twitter} alt=''/></a>
+          <a href='https://twitter.com/CISTLT1'><img src={twitter} alt=''/></a>
           <a href="mailto:cist-lt@googlegroups.com"><img src={mail} alt=''/></a>
-          <a href='https://github.com/Yoshiki-Yamada/'><img src={github} alt=''/></a>
+          <a href='https://github.com/CIST-LT-CLUB/'><img src={github} alt=''/></a>
         </div>
 
     </div>
