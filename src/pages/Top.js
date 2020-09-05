@@ -65,9 +65,9 @@ const Top =(props)=>{
       </div>
 
         <div className='iconFlex'>
-          <a href='https://twitter.com/CISTLT1'><img src={twitter} alt=''/></a>
+          <a href='https://twitter.com/CISTLT1' target="_blank" rel="noopener noreferrer"><img src={twitter} alt=''/></a>
           <a href="mailto:cist-lt@googlegroups.com"><img src={mail} alt=''/></a>
-          <a href='https://github.com/CIST-LT-CLUB/'><img src={github} alt=''/></a>
+          <a href='https://github.com/CIST-LT-CLUB/' target="_blank" rel="noopener noreferrer"><img src={github} alt=''/></a>
         </div>
 
     </div>
