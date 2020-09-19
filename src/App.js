@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Top from './pages/Top.js'
+import Calendar from './pages/Calendar.js'
 import Footer from './components/Footer'
 import * as contentful from "contentful";
 import ApiKey from "./constants/contentful";
@@ -53,6 +54,11 @@ const App =()=>{
           exact
           path="/blogs/:id"
           render={() => <Article data={blog}/>}
+          />
+          <Route
+          exact
+          path="/calendar"
+          render={() => <Calendar />}
           />
       </Switch>
       <Footer/>
