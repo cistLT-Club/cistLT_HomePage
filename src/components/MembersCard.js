@@ -5,7 +5,7 @@ const MembersCard =(props)=>{
   return(
     <>
     <div className='membersCard'>
-      <img src={`${props.data.fields.image.fields.file.url}?&w=100&h=200`}/>
+      <img src={`${props.data.fields.image.fields.file.url}?&w=250&h=250`}/>
       <p>{props.data.fields.name}</p>
     </div>
     </>
