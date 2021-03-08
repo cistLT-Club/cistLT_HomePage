@@ -1,0 +1,36 @@
+.calendarContainar{
+    width:95%;
+  max-width:1000px;
+  margin:50px auto;
+  margin-top:100px;
+    h2{
+        padding-top:50px;
+        padding-bottom:20px;
+        font-family: 'Comfortaa', cursive;
+        color:#FCEE21;
+        text-align:center;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #FCEE21, 0 0 0.5em #FCEE21, 0 0 0.1em #FCEE21, 0 10px 3px #000;
+        span{
+          animation: blink linear infinite 2s;
+          &:nth-of-type(2){
+            animation: blink linear infinite 3s;
+          }
+        }
+      }
+      .calendar {
+         display: block;
+         width: clamp(300px, 90vw, 800px);
+         height: 600px;
+         margin: 30px auto;
+      }
+         
+    
+}
+
+@media (max-width: 768px) {
+    .calendar {
+        width: 330px !important;
+        height: 320px !important;
+      }
+      
+}

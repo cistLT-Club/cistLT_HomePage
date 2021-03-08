@@ -1,0 +1,56 @@
+.profileImage {
+  border-radius: 5px;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+.memberName {
+  text-align: center;
+}
+
+.snsIcon {
+  width: 13%;
+  margin: 5px;
+}
+.profile {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 95%;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 10px 10px;
+}
+.comment {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 3px;
+}
+.portfolioLink {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  a {
+    color: #000;
+    text-decoration: none;
+    img {
+      width: 50px;
+    }
+  }
+}
+.snsLinks {
+  text-align: center;
+}
+.profileTitle {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: "Comfortaa", cursive;
+  color: #fcee21;
+  text-align: center;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #fcee21, 0 0 0.5em #fcee21,
+    0 0 0.1em #fcee21, 0 10px 3px #000;
+  span {
+    animation: blink linear infinite 2s;
+    &:nth-of-type(2) {
+      animation: blink linear infinite 3s;
+    }
+  }
+}

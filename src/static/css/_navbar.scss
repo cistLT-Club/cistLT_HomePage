@@ -1,0 +1,50 @@
+.navbar{
+  position: fixed;
+  top: 50%;
+  transform:translateY(-50%);
+  z-index:100;
+  list-style:none;
+  font-weight:bold;
+  text-decoration:none;
+  li a{
+    text-decoration:none;
+    color:white;
+    line-height:50px;
+  }
+  .active{
+    a{
+      color:yellow;
+    }
+    position:relative;
+    &:before{
+      position:absolute;
+      left:-20px;
+      top:50%;
+      transform:translateY(-50%);
+      content:'';
+      display:inline-block;
+      width:20px;
+      height:20px;
+      background-image:url(../images/energy.svg);
+      background-size: contain;
+      background-repeat:no-repeat;
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .navbar{
+    display: flex;
+    top: 0px;
+    transform:translateY(0%);
+    margin:0;
+    padding:0;
+    background-color:rgba(255,255,255,0.4);
+    width:100%;
+    left:0;
+    justify-content:space-between;
+    padding:20px 10px 0 30px ;
+    font-size:14px;
+    box-sizing:border-box;
+  }
+}
