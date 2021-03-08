@@ -10,7 +10,7 @@ import {
   FacebookShareButton,
   FacebookIcon,
 } from 'react-share'
-import Ogp from '../components/Helmet';
+
 
 
 const Article =(props)=>{
