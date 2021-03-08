@@ -9,6 +9,8 @@ import * as contentful from "contentful";
 import ApiKey from "./constants/contentful";
 import Blogs from './pages/Blogs';
 import Article from './pages/Article'
+import Profile from './pages/Profile';
+import NotFound from './pages/NotFound';
 import ReactGA from 'react-ga';
 import {createBrowserHistory} from 'history';
 
@@ -17,6 +19,7 @@ const App =()=>{
   const client = contentful.createClient(ApiKey)
   const [blog, setBlog] = useState([])
   const [members, setMembers] = useState([])
+  const [profile, setProfile] = useState([])
   
   //Google Analytics
   ReactGA.initialize('UA-173647357-1');
@@ -39,6 +42,12 @@ const App =()=>{
         'sys.contentType.sys.id': 'members'
       })
       .then((res) => setMembers(res.items))
+    client
+      .getEntries({
+        order: '-sys.createdAt',
+        'sys.contentType.sys.id': 'individual'
+      })
+      .then((res) => setProfile(res.items))
   },[])
 
   return(
@@ -46,7 +55,7 @@ const App =()=>{
       <Switch>
         <Route exact
           path="/"
-          render={() => <Top data={blog} data2={members}/>}></Route>
+          render={() => <Top data={blog} data2={profile}/>}></Route>
         <Route exact
           path="/blogs"
           render={() => <Blogs data={blog}/>}></Route>
@@ -55,11 +64,20 @@ const App =()=>{
           path="/blogs/:id"
           render={() => <Article data={blog}/>}
           />
-          <Route
+        <Route
+          exact
+          path="/profile/:id"
+          render={() => <Profile data={profile}/>}
+          />
+        <Route
           exact
           path="/calendar"
           render={() => <Calendar />}
           />
+        <Route exact
+          path="*"
+          render={() => <NotFound />}>
+        </Route>
       </Switch>
       <Footer/>
     </BrowserRouter>
