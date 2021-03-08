@@ -41,10 +41,12 @@ const Top =(props)=>{
       </div>
       <div id="members">
       <h2>ME<span>MB</span>E<span>R</span>S</h2>
-      <div  className='members'>
-      {props.data2.length ? props.data2.map((item,i)=>(<MembersCard data={item}/>)):
-      (<p>Now Loading...</p>)}
-      </div>
+      <Link  to={props.url} className='moreButton'></Link>
+        <div  className='members'>
+        {props.data2.length ? props.data2.map((item,i)=>(<MembersCard data={item}/>)):
+        (<p>Now Loading...</p>)}
+        </div>
+        
       </div>
 
       <div id="blogs" className='newBlog'>

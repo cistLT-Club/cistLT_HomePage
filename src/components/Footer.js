@@ -9,15 +9,16 @@ const Footer =()=>{
     <Link to=''><img src={logo} alt=''/></Link>
       <p>
         製作:Yoshiki-Yamada
-         / دوجا
+          /saito
           /tanaka🤍
           /0yu
           /Takahashi
           /osamu
+          /u-tan
       </p>
       
 
-      <small>©️2020 CIST-LTサークル</small>
+      <small>©️2020-2021 CIST-LTサークル</small>
     </div>
 
     </>
