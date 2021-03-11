@@ -7,7 +7,7 @@ const BlogCard =(props)=>{
     <>
     <Link to={props.url} className='blogCard'>
       
-        <img src={`${props.data.fields.image.fields.file.url}?&w=250&h=250`}/>
+        <img src={`${props.data.fields.image.fields.file.url}?fm=webp&w=250&h=250`}/>
         <h3>{props.data.fields.title}</h3>
         <p>{props.data.fields.publishDate}</p>
      
