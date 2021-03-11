@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import arrow from '../static/images/arrow.svg'
-import { ScrollTopOnMount } from '../components/ScrollToTopOnMount';
+import { ScrollTopOnMount } from '../components/ScrollToTopOnMount'
 import twitter from '../static/images/twitter_profile.png'
 import github from '../static/images/github_profile.png'
 import facebook from '../static/images/facebook_profile.png'
@@ -57,7 +57,7 @@ const Profile =(props)=>{
     <div className='profile'> 
 
     {contents}
-    
+
     <Link to='/' className='toBlogs'><button type="button"><img src={arrow} alt=''/>トップページへ</button></Link>
     </div>
     </div>

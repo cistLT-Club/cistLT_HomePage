@@ -1,0 +1,44 @@
+[debug] [2021-03-11T17:31:39.973Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T17:31:39.976Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saito.hatsuki\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2021-03-11T17:31:39.976Z] CLI Version:   9.6.0
+[debug] [2021-03-11T17:31:39.976Z] Platform:      win32
+[debug] [2021-03-11T17:31:39.976Z] Node Version:  v12.18.4
+[debug] [2021-03-11T17:31:39.977Z] Time:          Fri Mar 12 2021 02:31:39 GMT+0900 (GMT+09:00)
+[debug] [2021-03-11T17:31:39.977Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T17:31:39.977Z] 
+[debug] [2021-03-11T17:31:39.979Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2021-03-11T17:31:40.526Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-03-11T17:31:57.526Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T17:31:57.528Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saito.hatsuki\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2021-03-11T17:31:57.528Z] CLI Version:   9.6.0
+[debug] [2021-03-11T17:31:57.528Z] Platform:      win32
+[debug] [2021-03-11T17:31:57.528Z] Node Version:  v12.18.4
+[debug] [2021-03-11T17:31:57.529Z] Time:          Fri Mar 12 2021 02:31:57 GMT+0900 (GMT+09:00)
+[debug] [2021-03-11T17:31:57.529Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T17:31:57.529Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1024811905&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-03-11T17:35:04.690Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T17:35:04.692Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saito.hatsuki\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2021-03-11T17:35:04.692Z] CLI Version:   9.6.0
+[debug] [2021-03-11T17:35:04.693Z] Platform:      win32
+[debug] [2021-03-11T17:35:04.693Z] Node Version:  v12.18.4
+[debug] [2021-03-11T17:35:04.694Z] Time:          Fri Mar 12 2021 02:35:04 GMT+0900 (GMT+09:00)
+[debug] [2021-03-11T17:35:04.694Z] ----------------------------------------------------------------------
+[debug] [2021-03-11T17:35:04.694Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=513022710&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...

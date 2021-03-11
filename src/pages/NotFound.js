@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import arrow from '../static/images/arrow.svg'
 
 const NotFound =()=>{
