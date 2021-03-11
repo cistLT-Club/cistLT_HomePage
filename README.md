@@ -61,7 +61,7 @@ localhost:3000
 ## 文責  
 * 作成: cistLT(Yoshiki-Yamada,saito,tanaka🤍,0yu,Takahashi,osamu,u-tan)
 * E-mail: cist-lt@googlegroups.com  
-* [@tcistLT](https://twitter.com/cistLT)  
+* [@cistLT](https://twitter.com/cistLT)  
 
 
 # ライセンス
