@@ -7,7 +7,7 @@ const MembersCard =(props)=>{
   return(
     <div className='membersCard'>
     <Link  to={"profile/"+props.data.sys.id} className="cardLink">
-      <img src={props.data.fields.image.fields.file.url+"?&w=250&h=250"}/>
+      <img src={`${props.data.fields.image.fields.file.url}?fm=webp&w=200&h=200`}/>
       <p>{props.data.fields.name}</p>
     </Link>
     {/* <div onClick={() => console.log(props.data)}>clg</div> */}

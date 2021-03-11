@@ -23,7 +23,7 @@ const Article =(props)=>{
   
   const contents = mydetail ? (
       <>
-        <img src={mydetail.fields.image.fields.file.url}/>
+        <img src={`${mydetail.fields.image.fields.file.url}?&w=200&h=200`}/>
         <ReactMarkdown source={mydetail.fields.title} className='title'/>
         <ReactMarkdown source={mydetail.fields.publishDate} className='publishDate' />
         <ReactMarkdown source={mydetail.fields.author} className='publishDate' />
