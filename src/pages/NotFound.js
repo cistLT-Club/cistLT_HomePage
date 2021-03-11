@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom'
-import ReactMarkdown from 'react-markdown';
 import arrow from '../static/images/arrow.svg'
-import { ScrollTopOnMount } from '../components/ScrollToTopOnMount';
-
 
 const NotFound =()=>{
 

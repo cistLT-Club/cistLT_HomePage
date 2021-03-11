@@ -1,12 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom'
-import ReactMarkdown from 'react-markdown';
 import arrow from '../static/images/arrow.svg'
 import { ScrollTopOnMount } from '../components/ScrollToTopOnMount';
-
-import external_link from '../static/images/external_link.png'
-
 import twitter from '../static/images/twitter_profile.png'
 import github from '../static/images/github_profile.png'
 import facebook from '../static/images/facebook_profile.png'
@@ -39,17 +35,10 @@ const Profile =(props)=>{
   const contents = mydetail ? (
       <>
         <h1 className="memberName">{mydetail.fields.name}</h1>
-
-        
           <a href={mydetail.fields.portfolio}>
             <img className="profileImage" src={`${mydetail.fields.image.fields.file.url}`} />
           </a>
-
-          {/* <div className="portfolioLink">
-            <a href={mydetail.fields.portfolio}>ポートフォリオ<img src={external_link} /></a>
-          </div> */}
-
-          <p className="comment">{mydetail.fields.text}</p>
+        <p className="comment">{mydetail.fields.text}</p>
         
         <div className="snsLinks">
           <a href={mydetail.fields.twitter}><img className="snsIcon" style={new Judge(mydetail.fields.twitter)} src={twitter} alt=''/></a>
@@ -67,8 +56,8 @@ const Profile =(props)=>{
       <h2 className="profileTitle">P<span>r</span>o<span>f</span>i<span>l</span>e</h2>
     <div className='profile'> 
 
-    {/* <div onClick={() => console.log(props.data)}>clg</div> */}
     {contents}
+    
     <Link to='/' className='toBlogs'><button type="button"><img src={arrow} alt=''/>トップページへ</button></Link>
     </div>
     </div>

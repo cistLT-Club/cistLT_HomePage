@@ -1,17 +1,18 @@
 import React from 'react'
-import BlogCard from '../components/BlogCard';
+import BlogCard from '../components/BlogCard'
 import logo from '../static/images/logo.svg'
 import twitter from '../static/images/twitter.png'
 import mail from '../static/images/mail.png'
 import github from '../static/images/github.png'
 import MembersCard from '../components/MembersCard'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import energy from '../static/images/energy.svg'
 import Navbar from '../components/Navbar'
 
 const Top =(props)=>{
   let bloglist = ''
   let bloglist2 = []
+
   if (props.data.length && props.data.length <= 4) {
     bloglist = props.data.map((item,i) => (
       <div key={item.sys.id}>
@@ -39,6 +40,7 @@ const Top =(props)=>{
           IT技術系の勉強をしています！初心者大歓迎です！所属メンバーはバイオ系、電子工学系、情報工学系と様々なメンバーで構成されています！！みんなで興味のあることを勉強し、アウトプットすることを目標にしています！一人で悩まないで！一緒に技術力を高めませんか？？
         </p>
       </div>
+
       <div id="members">
       <h2>ME<span>MB</span>E<span>R</span>S</h2>
       <Link  to={props.url} className='moreButton'></Link>
@@ -46,7 +48,6 @@ const Top =(props)=>{
         {props.data2.length ? props.data2.map((item,i)=>(<MembersCard data={item}/>)):
         (<p>Now Loading...</p>)}
         </div>
-        
       </div>
 
       <div id="blogs" className='newBlog'>

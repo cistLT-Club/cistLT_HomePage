@@ -1,9 +1,9 @@
 import React from 'react'
 import { useParams,useLocation } from 'react-router-dom'
-import ReactMarkdown from 'react-markdown';
-import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown'
+import { Link } from 'react-router-dom'
 import arrow from '../static/images/arrow.svg'
-import { ScrollTopOnMount } from '../components/ScrollToTopOnMount';
+import { ScrollTopOnMount } from '../components/ScrollToTopOnMount'
 import { 
   TwitterShareButton, 
   TwitterIcon,
@@ -43,7 +43,6 @@ const Article =(props)=>{
     <div className='container'>
     <div className='article'> 
     <Link to='/blogs' className='toBlogs'><button type="button"><img src={arrow} alt=''/>記事一覧へ</button></Link>
-    {/* <div onClick={()=>console.log(mydetail)}>clg</div> */}
     {contents}
     </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import BlogCard from '../components/BlogCard'
-import { ScrollTopOnMount } from '../components/ScrollToTopOnMount';
+import { ScrollTopOnMount } from '../components/ScrollToTopOnMount'
 
 const Blogs =(props)=>{
   return(
