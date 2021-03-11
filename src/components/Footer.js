@@ -6,6 +6,7 @@ const Footer =()=>{
   return(
     <>
     <div className='footer'>
+
     <Link to=''><img src={logo} alt=''/></Link>
       <p>
         製作:Yoshiki-Yamada

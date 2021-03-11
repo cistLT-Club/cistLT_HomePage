@@ -1,3 +1,12 @@
+.profileContainer{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width:95%;
+  max-width:1000px;
+  margin:50px auto;
+  margin-top:150px;
+  margin-bottom: 1px;
 .profileImage {
   border-radius: 5px;
   width: 60%;
@@ -18,6 +27,7 @@
   margin: 0 auto;
   max-width: 500px;
   padding: 10px 10px;
+  margin-bottom: 100px;
 }
 .comment {
   text-align: center;
@@ -53,4 +63,6 @@
       animation: blink linear infinite 3s;
     }
   }
+}
+
 }

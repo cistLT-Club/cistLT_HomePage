@@ -63,7 +63,7 @@ const Profile =(props)=>{
   return(
     <>
     <ScrollTopOnMount/>
-    <div className='container'>
+    <div className='profileContainer container'>
       <h2 className="profileTitle">P<span>r</span>o<span>f</span>i<span>l</span>e</h2>
     <div className='profile'> 
 
